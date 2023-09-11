@@ -32,4 +32,11 @@ public class LoginTestDefinitions extends BaseClassDefinition {
     public void verifyMainPage() {
         Assertions.assertTrue(chromeDriver.findElement(By.xpath("//span[contains(text(), 'Products')]")).isDisplayed());
     }
+    @Given("I login to web site")
+    public void loginToWebSite() {
+        inputUsername("standart_user");
+        inputPassword("secret_sauce");
+        pressOnSubmitButton();
+        verifyMainPage();
+    }
 }

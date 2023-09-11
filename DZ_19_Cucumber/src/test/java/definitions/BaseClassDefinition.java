@@ -1,7 +1,5 @@
 package definitions;
 
-import io.cucumber.java.After;
-import org.junit.Before;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.chrome.ChromeDriver;
